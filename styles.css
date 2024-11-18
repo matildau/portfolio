@@ -165,7 +165,29 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.home-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-button:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* Footer */
