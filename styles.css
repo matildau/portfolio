@@ -156,6 +156,18 @@ a {
   height: 43.61px;
 }
 
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 /* Footer */
 .wrapper {
   display: flex;
@@ -354,7 +366,7 @@ a {
   object-fit: cover;
 }
 
-/* For screens smaller than 800px*/
+/* For screens smaller than 800px */
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 2rem;
