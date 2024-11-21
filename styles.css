@@ -110,22 +110,22 @@ a {
 
 /* Custom Button */
 .button-container {
-  width: 100%;
-  background: #f9f8ee;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
 }
 
+/* Buttons */
 .custom-button {
-  width: 100%;
+  flex: 1 1 auto;
   font-family: "Archivo Black", sans-serif;
   color: #1f1f1f;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   background: #f9f8ee;
-  padding: 7rem 14rem;
+  padding: 2rem;
   border: 1px solid #1f1f1f;
   cursor: pointer;
   text-transform: uppercase;
@@ -279,6 +279,7 @@ a {
   height: 90%;
   padding: 0rem 5rem;
   align-self: stretch;
+  gap: 60px;
 }
 
 .content-section-right {
@@ -291,19 +292,20 @@ a {
   height: 90%;
   padding: 0rem 5rem;
   align-self: stretch;
+  gap: 60px;
 }
 
 .text-content-section {
   display: flex;
   flex-direction: row;
-  gap: 50px; /* Row gap won't apply in flex-direction: row, use gap instead */
+  gap: 50px;
   padding: 100px;
-  justify-content: space-between; /* Distributes the items with space between them */
+  justify-content: space-between;
   align-items: center;
 }
 
 .text-content-section > * {
-  flex: 1 1 50%; /* This ensures each child takes up 50% of the available width */
+  flex: 1 1 50%;
 }
 
 .profile-image {
@@ -316,8 +318,9 @@ a {
 }
 
 .project-image {
-  width: 31.25rem;
-  height: 31.25rem;
+  width: 30rem;
+  height: 30rem;
+  padding: 30px 30px;
   object-fit: cover;
   display: flex;
   cursor: pointer;
@@ -350,7 +353,7 @@ a {
 
 /* Skill Banner */
 .banner {
-  width: 100%;
+  width: 99%;
   background: #f9f8ee;
   border: 1px solid #4363a7;
   display: inline-flex;
@@ -390,6 +393,34 @@ a {
 
 /* For screens smaller than 800px */
 @media only screen and (max-width: 800px) {
+  html,
+  body,
+  section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .logo {
+    width: 78px;
+    height: 32.7075px;
+  }
+
+  .menu,
+  header {
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .menu a {
+    padding: 0px;
+  }
+
+  .home-button,
+  .back-button {
+    padding: 0px;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -406,6 +437,10 @@ a {
     font-size: 0.875rem;
   }
 
+  .title-section {
+    padding: 100px 0px 0px 0px;
+  }
+
   .text-header {
     width: 100%;
     padding: 0 1rem;
@@ -413,8 +448,7 @@ a {
   }
 
   .banner {
-    flex-direction: row;
-    gap: 3px;
+    display: none;
   }
 
   .skill {
@@ -430,6 +464,7 @@ a {
     padding: 0px;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .footer-logo {
@@ -445,7 +480,6 @@ a {
   .profile-image {
     width: 100%;
     height: auto;
-    padding: 1rem;
   }
 
   .contact-info {
@@ -459,19 +493,15 @@ a {
   }
 
   .content-image {
-    width: 421px;
-    height: 161px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     padding: 5px, 0px;
   }
 
   .custom-button {
-    padding: 2rem 4rem;
     font-size: 1rem;
-  }
-
-  .about-content {
-    font-size: 0.875rem;
+    padding: 1rem;
   }
 
   .image-grid {
@@ -486,6 +516,12 @@ a {
     width: 100%;
     height: auto;
     padding: 3rem;
+    font-size: 0.875rem;
+    gap: 0px;
+  }
+
+  .text-content-section {
+    padding: 20px;
   }
 
   .button-secondary,
