@@ -391,6 +391,17 @@ a {
   object-fit: cover;
 }
 
+/* Form*/
+form {
+  flex-direction: column;
+  display: flex;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 80%;
+  gap: 10px;
+}
+
 /* For screens smaller than 800px */
 @media only screen and (max-width: 800px) {
   html,
@@ -437,6 +448,11 @@ a {
     font-size: 0.875rem;
   }
 
+  .center-content-section {
+    width: 95%;
+    padding: 30px;
+  }
+
   .title-section {
     padding: 100px 0px 0px 0px;
   }
@@ -462,6 +478,8 @@ a {
 
   .footer {
     padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -515,7 +533,7 @@ a {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 3rem;
+    padding: 30px;
     font-size: 0.875rem;
     gap: 0px;
   }
@@ -532,5 +550,10 @@ a {
 
   .button-text {
     font-size: 0.875rem;
+  }
+
+  .image-banner img {
+    height: 107px;
+    object-fit: cover;
   }
 }
