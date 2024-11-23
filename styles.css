@@ -383,6 +383,12 @@ a {
   grid-template-columns: repeat(6, 1fr);
   align-self: stretch;
   margin: 0;
+  height: auto;
+  gap: 0;
+}
+
+.image-grid div {
+  height: 214px;
 }
 
 .image-banner img {
@@ -568,5 +574,9 @@ input {
   .image-banner img {
     height: 107px;
     object-fit: cover;
+  }
+
+  .image-grid div {
+    height: 107px;
   }
 }
