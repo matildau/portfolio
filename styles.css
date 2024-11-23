@@ -392,14 +392,27 @@ a {
 }
 
 /* Form*/
-form {
+.form {
   flex-direction: column;
   display: flex;
   font-family: "Albert Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  width: 80%;
+  width: 100%;
   gap: 10px;
+}
+
+textarea {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  height: 100px;
+}
+
+input {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 /* For screens smaller than 800px */
